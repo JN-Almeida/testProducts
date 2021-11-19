@@ -4,11 +4,11 @@ export const Container = styled.div`
     background-color: #ffffff;
     padding: 32px;
     border-radius: 8px;
-    border: solid #000 2px;
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 305px;
+    box-shadow: 0 0 0 5 #1C1C1C;
 
     .productTitle{
         font-size: 14px;
