@@ -55,8 +55,54 @@ export const Container = styled.div`
                 fill: #FEE5EC;
             }
         }
+        ${({whishListAdded}) => whishListAdded && `
+            svg{
+                fill: #DA4B4F;
+                stroke: #DA4B4F;
+            }
+        `}
         
     }
+`;
+
+
+export const WishListButton = styled.button`
+    background-color: #F2F3F6;
+    border-radius: 100%;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        stroke: #1C1C1C;
+    }
+    &:hover{
+        background-color: #FEE5EC;
+        svg{
+            stroke: #DA4B4F;
+            fill: #FEE5EC;
+        }
+    }
+    ${({whishListAdded}) => whishListAdded && `
+        background-color: #DA4B4F;
+        svg{
+            fill: #ffffff;
+            stroke: inherit;
+        }
+        &:hover {
+            background-color: #C22539;
+            svg{
+                fill: #ffffff;
+                stroke: inherit;
+            }
+        }
+    `}
 `;
 
 export const ButtonAddToCart = styled.button`
@@ -73,12 +119,15 @@ export const ButtonAddToCart = styled.button`
     justify-content: center;
     gap: 10px;
     
-    &:hover, &:focus, &:active {
+    &:hover {
         background-color: #1C6C3E;
     }
 
     ${({addedToCart}) => addedToCart && `
         background-color: #A3F9B9;
         color: #1C1C1C;
+        &:hover {
+            background-color: #A3F9B9;
+        }
     `}
 `;

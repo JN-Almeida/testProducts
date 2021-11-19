@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #fff;
+    background-color: #E5E5E5;
     font-family: 'Inter', sans-serif;
     letter-spacing: -.5px;
     color: #515151;
