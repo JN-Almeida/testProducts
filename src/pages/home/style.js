@@ -6,4 +6,8 @@ export const Container = styled.div`
     display: flex;
     padding: 40px;
     justify-content: space-around;
+    @media screen and (max-width: 680px){
+        flex-direction: column;
+        width: 85vw;
+    }
 `;

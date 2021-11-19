@@ -9,6 +9,7 @@ export const Container = styled.div`
     flex-direction: column;
     max-width: 305px;
     box-shadow: 0 0 0 5 #1C1C1C;
+    margin-bottom: 30px;
 
     .productTitle{
         font-size: 14px;
